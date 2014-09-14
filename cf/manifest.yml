@@ -1,0 +1,12 @@
+---
+applications:
+- name: synci 
+  memory: 512M 
+  instances: 1
+  host: synci
+  domain: cfapps.io
+  path: synci.war
+  buildpack: https://github.com/thesynapses/java-buildpack.git
+  env: 
+    JENKINS_HOME: /home/vcap/app/.java-buildpack/tomcat/webapps/ROOT
+ 
